@@ -11,7 +11,7 @@
 
 import { useState } from 'react';
 import SignupModal from './components/SignupModal';
-import MainScreen from './components/MainScreen';
+import MainScreen from './page/MainScreen';
 import './App.css';
 
 function App() {
