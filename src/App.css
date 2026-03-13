@@ -1,0 +1,4 @@
+/* Reset básico para o app ficar consistente */
+* {
+  box-sizing: border-box;
+}

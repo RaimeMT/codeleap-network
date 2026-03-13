@@ -1,0 +1,14 @@
+/* Estilos globais - fundo cinza como no design da tela principal */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  background: #dddddd;
+}
+
+#root {
+  min-height: 100vh;
+}
