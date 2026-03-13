@@ -1,0 +1,177 @@
+.main-screen {
+  min-height: 100vh;
+  background: #dddddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  background: #7695ec;
+  padding: 24px 32px;
+}
+
+.main-header-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.create-section {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.create-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 24px;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.create-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.create-input,
+.create-textarea {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #777;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.create-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.create-input:focus,
+.create-textarea:focus {
+  outline: none;
+  border-color: #7695ec;
+}
+
+.create-btn {
+  align-self: flex-end;
+  padding: 8px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #7695ec;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.create-btn:not(:disabled):hover {
+  background: #5a7dd6;
+}
+
+.main-error {
+  background: #fee;
+  color: #c00;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.main-loading,
+.main-empty {
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.post-card {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  flex: 1;
+}
+
+.post-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.post-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.post-action-btn:hover {
+  opacity: 1;
+}
+
+.post-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  color: #777;
+  font-size: 14px;
+}
+
+.post-author {
+  font-weight: 600;
+}
+
+.post-content {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.4;
+  margin: 0;
+  white-space: pre-wrap;
+}
