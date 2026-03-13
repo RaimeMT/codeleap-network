@@ -1,14 +1,11 @@
 /**
- * Serviço da API CodeLeap - Careers (posts).
- * Base URL: https://dev.codeleap.co.uk/careers/
- * 
  * Resposta do GET: { count, next, previous, results: [] }
  * Cada item em results tem: id, username, created_datetime, title, content (e talvez author_ip).
  */
 
 import axios from 'axios';
 
-const BASE_URL = 'https://dev.codeleap.co.uk/careers';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const api = axios.create({
   baseURL: BASE_URL,
