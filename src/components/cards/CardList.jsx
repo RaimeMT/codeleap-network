@@ -1,3 +1,7 @@
+import EditIcon from "../../assets/Edit.svg"
+import TrashIcon from "../../assets/Trash.svg"
+
+
 export function CardList({
   posts,
   isOwnPost,
@@ -21,7 +25,8 @@ export function CardList({
                   title="Edit"
                   aria-label="Edit post"
                 >
-                  ✏️
+                  <img src={EditIcon} alt="imagem-Edicao" />
+
                 </button>
 
                 <button
@@ -31,11 +36,18 @@ export function CardList({
                   title="Delete"
                   aria-label="Delete post"
                 >
-                  🗑️
+                  <img src={TrashIcon} alt="imagem-Lixeira" />
                 </button>
+
               </div>
+
             )}
           </div>
+
+          <div className="post-card-container">
+
+
+
 
           <div className="post-meta">
             <span className="post-author">@{post.username}</span>
@@ -45,6 +57,7 @@ export function CardList({
           </div>
 
           <p className="post-content">{post.content}</p>
+          </div>
         </article>
       ))}
     </div>

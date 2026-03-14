@@ -119,28 +119,35 @@
   background: #fff;
   border: 1px solid #999;
   border-radius: 16px;
-  padding: 24px;
+  /* padding: 24px; */
+}
+
+.post-card-container {
+  padding: 12px 24px
 }
 
 .post-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
+  align-items: center;
   margin-bottom: 16px;
+  background: #7595ec;
+  border-radius: 16px 16px 0 0;
 }
 
 .post-title {
   font-size: 18px;
   font-weight: 700;
-  color: #000;
+  color: #fff;
   margin: 0;
   flex: 1;
+  padding: 12px 24px;
+
 }
 
 .post-actions {
   display: flex;
   gap: 8px;
+  margin-right: 10px;
 }
 
 .post-action-btn {
@@ -159,6 +166,7 @@
 .post-meta {
   display: flex;
   gap: 16px;
+  justify-content: space-between;
   margin-bottom: 16px;
   color: #777;
   font-size: 14px;
